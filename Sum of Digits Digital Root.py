@@ -6,7 +6,7 @@ def digital_root(n):
         for i in lst:
             n += int(i)
     return n
-
+gi
 
 
 

@@ -1,13 +1,8 @@
-def product_fib(_prod):
+def product_fib(prod):
     a, b = 0, 1
-    while True:
-        if a * b == _prod:
-            return [a, b, True]
-        elif a * b > _prod:
-            return [a, b, False]
+    while a * b < prod:
         a, b = b, a + b
-
-print(product_fib(4353))
-
+    return [a, b, a * b == prod]
 
 
+print(product_fib(48967865876865))
